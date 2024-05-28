@@ -32,17 +32,19 @@ To install and run PredictMyCar, follow these steps:
    ```bash
    git clone https://github.com/yourusername/PredictMyCar.git
    cd PredictMyCar
-Create a virtual environment:
+   
+2. Create a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate
+   # On Windows use
+   `venv\Scripts\activate`
+   ```
 
-bash
-Copy code
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-Install the required dependencies:
-
-bash
-Copy code
-pip install -r requirements.txt
+3. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 
 ## Usage
@@ -52,10 +54,11 @@ Modify the config.py file to include the path to your dataset.
 
 Run the main script to start the prediction process:
 
-bash
-Copy code
+```bash
 python predict_my_car.py
+```
 Follow the prompts to input your car preferences.
+
 
 ## Models and Techniques
 PredictMyCar employs several advanced techniques and models, including:
@@ -69,12 +72,14 @@ Cosine Similarity: To find the most similar cars based on user input.
 Data Preprocessing
 Data preprocessing steps include handling missing values, encoding categorical variables using LabelEncoder, and scaling features using MinMaxScaler.
 
+
 ## Model Training
 ANN Training: Uses a multi-layer perceptron with dropout for regularization.
 RNN Training: Utilizes LSTM layers to capture sequential patterns.
 Cosine Similarity: Computes similarities between user input and existing car features.
 Model Evaluation
 Models are evaluated based on explained variance score, R-squared score, mean squared error, and root mean squared error. Visualization of training and validation accuracy and loss helps in assessing model performance.
+
 
 ## Evaluation
 The models are evaluated using metrics such as explained variance score and R-squared score. A detailed comparison of Linear Regression, Decision Tree, Random Forest, and Gradient Boosting models is provided.
@@ -88,8 +93,10 @@ Copy code
 | Random Forest       | 0.90                     | 0.89                       |
 | Gradient Boosting   | 0.88                     | 0.87                       |
 
+
 ## Results
 After training and evaluating the models, the project provides car recommendations based on user inputs. Users can choose to view predictions from ANN, RNN, or cosine similarity-based models.
+
 
 ## Contributing
 Contributions are welcome! If you'd like to contribute to this project, please fork the repository and use a feature branch. Pull requests are warmly welcome.
