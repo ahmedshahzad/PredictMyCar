@@ -10,8 +10,7 @@
 - [Models and Techniques](#models-and-techniques)
 - [Evaluation](#evaluation)
 - [Results](#results)
-- [Contributing](#contributing)
-- 
+- [Contributing](#contributing) 
 
 ## Overview
 
